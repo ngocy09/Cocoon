@@ -1,0 +1,194 @@
+/* Chung cho toàn bộ trang */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Banner */
+.banner {
+    background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Banner */
+.banner {
+    background-image: url('https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/306847745_193544793032964_9131857493822181502_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHv1NeIWvifUEmwxbD9YvDd4SMLbGE0KDPhIwtsYTQoM-qJkXTEMhKbpY4Vi74eW1iFXh6a7D1CCLbIc66QjzNg&_nc_ohc=iaR8bWPy4_4Q7kNvgF3LTfb&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=A89ukD3ZGelb21oSb0Wsnh8&oh=00_AYD-NQ3peou2l6jOx2aefWYz8y9BKeOKrh9PqdZcPH4dvQ&oe=67587800');
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+.banner .banner-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Màu nền mờ cho khung */
+    padding: 20px 40px; /* Padding để tạo khoảng cách giữa văn bản và viền */
+    border-radius: 10px; /* Viền tròn cho khung */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Thêm bóng cho khung */
+}
+
+.banner .banner-content h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.banner .banner-content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Nút xem sản phẩm */
+.btn-primary {
+    background-color: #ff6f61;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.btn-primary {
+    background-color: #ff6f61;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Sản phẩm */
+.products {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.product-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 16px;
+}
+
+/* Popup đăng nhập */
+.login-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+.login-popup.active {
+    display: block;
+}
+
+.login-popup h3 {
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.login-popup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-popup label {
+    margin: 10px 0 5px;
+}
+
+.login-popup input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-popup button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-popup button[type="button"] {
+    background-color: #ccc;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

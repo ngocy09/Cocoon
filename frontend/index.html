@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Cocoon Vietnam</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/202667140005381.6239fc9e2048c.png">Cocoon Vietnam</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#" id="loginBtn">Đăng nhập</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Sản phẩm thuần chay tự nhiên</h1>
+            <p>Chăm sóc làn da bạn một cách an toàn và thân thiện với môi trường.</p>
+            <a href="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/306847745_193544793032964_9131857493822181502_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHv1NeIWvifUEmwxbD9YvDd4SMLbGE0KDPhIwtsYTQoM-qJkXTEMhKbpY4Vi74eW1iFXh6a7D1CCLbIc66QjzNg&_nc_ohc=iaR8bWPy4_4Q7kNvgF3LTfb&_nc_zt=23&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=A89ukD3ZGelb21oSb0Wsnh8&oh=00_AYD-NQ3peou2l6jOx2aefWYz8y9BKeOKrh9PqdZcPH4dvQ&oe=67587800" class="btn-primary">Xem sản phẩm</a>
+        </div>
+    </section>
+
+    <!-- Sản phẩm nổi bật -->
+    <section class="products">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300" alt="Sản phẩm 1">
+                <h3>Serum Vitamin C</h3>
+                <p>Giá: 350,000₫</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300" alt="Sản phẩm 2">
+                <h3>Sữa rửa mặt bí đao</h3>
+                <p>Giá: 180,000₫</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300" alt="Sản phẩm 3">
+                <h3>Toner hoa hồng</h3>
+                <p>Giá: 220,000₫</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần giới thiệu -->
+    <section class="about">
+        <div class="container">
+            <h2>Về Cocoon Vietnam</h2>
+            <p>Chúng tôi tự hào mang đến các sản phẩm chăm sóc da thuần chay, chiết xuất từ thiên nhiên, an toàn và thân thiện với môi trường. Hãy cùng chúng tôi gìn giữ vẻ đẹp tự nhiên và bảo vệ môi trường sống.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cocoon Vietnam. Bản quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <!-- Popup Đăng nhập -->
+    <div class="login-popup" id="loginPopup">
+        <h3>Đăng nhập</h3>
+        <form action="#">
+            <label for="username">Tên đăng nhập:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Đăng nhập</button>
+            <button type="button" id="closeLoginPopup">Đóng</button>
+        </form>
+    </div>
+
+    <script>
+        const loginBtn = document.getElementById('loginBtn');
+        const loginPopup = document.getElementById('loginPopup');
+        const closeLoginPopup = document.getElementById('closeLoginPopup');
+
+        loginBtn.addEventListener('click', () => {
+            loginPopup.classList.add('active');
+        });
+
+        closeLoginPopup.addEventListener('click', () => {
+            loginPopup.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
